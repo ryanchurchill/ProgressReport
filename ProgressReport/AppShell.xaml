@@ -6,9 +6,19 @@
     xmlns:local="clr-namespace:ProgressReport"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="Data Entry">
+            <ShellContent Title="Data Entry"
+                          ContentTemplate="{DataTemplate local:DataEntryPage}">
+                
+            </ShellContent>
+        </Tab>
+        <Tab Title="Data View">
+            <ShellContent Title="Data View"
+                          ContentTemplate="{DataTemplate local:DataViewPage}">
+                
+            </ShellContent>
+        </Tab>
+    </TabBar>
 
 </Shell>

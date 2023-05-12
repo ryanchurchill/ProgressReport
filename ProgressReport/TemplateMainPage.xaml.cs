@@ -1,10 +1,10 @@
 ﻿namespace ProgressReport;
 
-public partial class MainPage : ContentPage
+public partial class TemplateMainPage : ContentPage
 {
 	int count = 0;
 
-	public MainPage()
+	public TemplateMainPage()
 	{
 		InitializeComponent();
 	}
